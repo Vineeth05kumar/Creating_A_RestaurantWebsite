@@ -2,7 +2,7 @@ import classes from "./HeaderCartButton.module.css";
 import CartIcon from "../Cart/CartIcon";
 
 export default function HeaderCartButton(props) {
-  return <button className={classes.button}>
+  return <button className={classes.button} onClick={props.onClickOnCart}>
     <span className={classes.icon}>
         <CartIcon />
     </span>

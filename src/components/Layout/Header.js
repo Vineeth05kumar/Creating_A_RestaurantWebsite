@@ -7,7 +7,7 @@ export default function Header(props) {
     <>
       <header className={classes.header}>
         <h1>React Meals</h1>
-        <HeaderCartButton />
+        <HeaderCartButton onClickOnCart={props.onCartClick}/>
       </header>
       <div className={classes["main-image"]}>
         <img src={imageMeal} alt="Mealimage" />

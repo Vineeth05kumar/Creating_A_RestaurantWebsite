@@ -17,7 +17,7 @@ export default function Cart(props) {
         <span>23.32</span>
       </div>
       <div className={classes.actions}>
-        <button className={classes['button--alt']}>CLOSE</button>
+        <button className={classes['button--alt']} onClick={props.onClose}>CLOSE</button>
         <button className={classes.button}>Order</button>
       </div>
     </Modal>
